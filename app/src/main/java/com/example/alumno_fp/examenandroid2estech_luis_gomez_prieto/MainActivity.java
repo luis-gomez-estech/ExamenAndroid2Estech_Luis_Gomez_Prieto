@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = (Button)findViewById(R.id.botonValida);
 
-        // Ahora le digo al boton que haga algo con  button.setOnClickListener(new View.OnClickListener()
         button.setOnClickListener(new View.OnClickListener() {
 
             // y lo que va a hacer es que cuando le demos a click  a va poner en Toast el valor de cada EditToast, tambien alertar si no esta relleno, si la edad en menor,
@@ -93,9 +92,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
-                // Con esto vamos a la actividad que le digamos
+                // Con esto vamos a la actividad 2
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-
 
                 intent.putExtra("datos", datos);
                 startActivity(intent);

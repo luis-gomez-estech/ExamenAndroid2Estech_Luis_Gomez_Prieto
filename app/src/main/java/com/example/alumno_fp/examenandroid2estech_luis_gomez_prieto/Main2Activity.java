@@ -10,13 +10,9 @@ import java.util.Arrays;
 
 public class Main2Activity extends AppCompatActivity {
 
-
     TextView resultados;
 
-
-
     private ArrayList<String> datos; // Declaro el arrayLst que va a contener los sitios
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +21,6 @@ public class Main2Activity extends AppCompatActivity {
 
         resultados = (TextView)findViewById(R.id.resultados);
 
-        Intent intent = this.getIntent();
-        Bundle extra = intent.getExtras();
-
-        // Y AQUI LA VARIABLE QUE VA A GUARDAR ESOS VALORES RECIBIDOS
 
         String resultFinal = getIntent().getStringExtra("datos");
         resultados.setText(resultFinal);
