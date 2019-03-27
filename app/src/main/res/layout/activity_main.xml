@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="#00dcf9"
+    >
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:drawableRight="@android:drawable/ic_menu_send"
+        android:hint="Tu nombre"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:drawableRight="@android:drawable/ic_menu_send"
+        android:hint="Edad"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:drawableRight="@android:drawable/ic_menu_send"
+        android:hint="Descripcion"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/botonValida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:background="#1b1b1b"
+        android:gravity="center"
+        android:text="Agregar"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <ListView
+        android:id="@+id/listaFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>
+
